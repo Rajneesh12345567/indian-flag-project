@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.flag {
+    width: 300px;
+    border: 1px solid #000;
+}
+
+.saffron, .white, .green {
+    height: 100px;
+    width: 100%;
+}
+
+.saffron {
+    background-color: #FF9933;
+}
+
+.white {
+    background-color: #fff;
+    position: relative;
+}
+
+.green {
+    background-color: #138808;
+}
+
+.ashok-chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000080;
+    border-radius: 50%;
+    background: radial-gradient(circle, transparent 20%, #000080 20%, #000080 80%, transparent 80%);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
